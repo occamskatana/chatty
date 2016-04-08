@@ -1,0 +1,35 @@
+.navbar {
+	background-color: grey;
+	height: 80px;
+}
+
+.navbar .logo {
+	color: white;
+	font-weight: 300;
+	vertical-align: text-middle;
+	font-size: 50px;
+	margin-left: 10px;
+	text-decoration: underline;
+	min-width: 20%
+	width: 20%;
+}
+
+html, body {
+	height: 100%;
+}
+
+.footer {
+	background-color: grey;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.footer h4 {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: white;
+}
