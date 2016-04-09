@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
@@ -11,6 +12,7 @@
 			Chatty
 		</div>
 	</nav>
+
 
 	<ui-view></ui-view>
 		<!-- AngularJS -->
@@ -22,6 +24,8 @@
 		<!-- UI router, bitches -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/RoomsCtrl.js"></script>
+    <script src="/scripts/services/Room.js"></script>
 
     <footer class="footer">
 			<h4>A John Carter Production</h4>

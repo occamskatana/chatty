@@ -3,6 +3,22 @@
 	height: 80px;
 }
 
+.room-list {
+	background-color: grey;
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	height: 60%;
+	width: 200px;
+	color: white
+}
+
+#sidebar-nav-fixed {
+    position:fixed;
+    top:60px;
+    width:21.97%;
+}
+
 .navbar .logo {
 	color: white;
 	font-weight: 300;
@@ -16,6 +32,7 @@
 
 html, body {
 	height: 100%;
+	width: 100%;
 }
 
 .footer {

@@ -9,6 +9,7 @@
 		$stateProvider
 			.state('chat', {
 				url: '/',
+				controller: 'RoomsCtrl',
 				templateUrl: 'templates/chat.html'
 			});
 	}
