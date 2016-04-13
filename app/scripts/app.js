@@ -15,6 +15,6 @@
 	}
 
 	angular
-		.module('chatty', ['ui.router', 'firebase'])
+		.module('chatty', ['ui.router', 'firebase', 'ui.bootstrap'])
 		.config(config);
 })();

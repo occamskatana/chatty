@@ -8,6 +8,8 @@
 			Room.create(newRoom);
 			$scope.newRoom = null;
 		}
+
+		
 	}
 
 	angular

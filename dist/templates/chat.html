@@ -3,11 +3,11 @@
 
 
 
-<div class="container well sidebar-nav-fixed">
+<div class="container well sidebar-nav-fixed" align="center">
 	<h3 align="center">Chat Rooms</h3>
-	<input type="text" ng-model="newRoom"><button class="btn btn-success" ng-click="addRoom(newRoom)">Submit</button>
-	{{newRoom}}
-	
+	<div ng-controller="ModalCtrl">
+		<button ng-click="open()" class="btn btn-success">Add A Room!</button>
+	</div>
 
 	<div class="rooms-list">
 		<h2>Rooms</h2>
