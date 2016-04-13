@@ -13,9 +13,10 @@
 	color: white
 }
 
-#sidebar-nav-fixed {
+.sidebar-nav-fixed {
+
     position:fixed;
-    top:60px;
+    top:200px;
     width:21.97%;
 }
 

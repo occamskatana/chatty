@@ -3,8 +3,21 @@
 
 
 
-<div id="sidebar" class="well" ng-repeat="room in rooms">
+<div class="container well sidebar-nav-fixed">
+	<h3 align="center">Chat Rooms</h3>
+	<input type="text" ng-model="newRoom"><button class="btn btn-success" ng-click="addRoom(newRoom)">Submit</button>
+	{{newRoom}}
 	
-		{{room.title}}
+
+	<div class="rooms-list">
+		<h2>Rooms</h2>
+		<div ng-repeat="room in rooms" class="rooms-list">
+			<h3>{{$index + 1}}. {{room.$value}}</h3>
+		</div>
+	</div>
 	
+
+
+
+
 </div>

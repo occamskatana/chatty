@@ -1,17 +1,16 @@
 (function(){
-	function RoomsCtrl($scope, $firebaseObject, Room){
-
-		var ref = new Firebase("https://boiling-torch-5645.firebaseio.com/");
-
-
+	function RoomsCtrl(Room, $scope){
 		$scope.rooms = Room.all
 
-		console.log($scope.rooms)
+		$scope.newRoom;
 
-		
+		$scope.addRoom = function(newRoom){
+			Room.create(newRoom);
+			$scope.newRoom = null;
+		}
 	}
 
-	angular 
+	angular
 		.module('chatty')
-		.controller('RoomsCtrl', ['$scope', '$firebaseObject', 'Room', RoomsCtrl])
+		.controller('RoomsCtrl', ['Room', '$scope', RoomsCtrl])
 })();

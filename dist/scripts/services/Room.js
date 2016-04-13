@@ -1,11 +1,14 @@
 (function(){
 	function Room($firebaseArray){
-		var firebaseRef = new Firebase("https://boiling-torch-5645.firebaseio.com/")
-		var rooms = $firebaseArray(firebaseRef.child('rooms'))
-		
-	
+		var ref = new Firebase('https://chattybloc.firebaseio.com');
+		rooms = $firebaseArray(ref.child('rooms'));
+		var _addRoom = function(room){
+			rooms.$add(room);
+		};
+
 		return {
 			all: rooms,
+			create: _addRoom
 		};
 	}
 
