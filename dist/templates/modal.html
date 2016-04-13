@@ -1,14 +1,14 @@
 
     <div class="modal-header">
-        <h3 class="modal-title">I'm a modal!</h3>
+        <h3 class="modal-title">Create new Rooms Here</h3>
     </div>
     <div class="modal-body">
-        <ul>
-            <li ng-repeat="item in items">
-                <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
-            </li>
+        <ul ng-controller="RoomsCtrl">
+            <input type="text" ng-model="newRoom"> <br /> <br />
+            <button class="btn btn-success" ng-click="addRoom(newRoom)">Submit</button>
+            
         </ul>
-        Selected: <b>{{ selected.item }}</b>
+       Click ok when done.
     </div>
     <div class="modal-footer">
         <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
