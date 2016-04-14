@@ -9,6 +9,12 @@
 			$scope.newRoom = null;
 		}
 
+		$scope.messages;
+
+		$scope.goGetMessages = function(roomId){
+			$scope.messages = Room.getMessages(roomId);
+			
+		}
 		
 	}
 
