@@ -34,8 +34,19 @@
 		<div class="col-md-8 chat-room">
 			<h2 align="center">{{roomName}}</h2>
 			<div class="chat-box-container well" ng-show="roomName !== 'Pick a Room'">
-				
+				<div class="message" ng-repeat="message in messages" ng-show="messages.length != 0">
+					<p>{{message.username}} says: {{message.text}}</p>
+					
+				</div>
 			</div>
-		</div>
+
+			<div ng-show="roomName !== 'Pick a Room'">
+				<form class="form-inline" ng-submit="sendMessage()">
+				  <div class="form-group">
+				    <input type="text" ng-model="message" class="form-control" placeholder="Type a Message!">
+				  </div>
+				  <button type="submit" class="btn btn-primary btn-inline">Submit</button>
+				</form>
+		  </div>
 	</div>
 </div>

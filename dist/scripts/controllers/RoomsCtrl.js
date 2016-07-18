@@ -46,6 +46,12 @@
 			$scope.roomName = "Pick a Room"
 			$scope.roomName = room.name;
 		}
+
+		$scope.message
+		$scope.sendMessage = function(){
+			$scope.messages.$add({text: $scope.message, username: $cookies['blocChatCurrentUser']});
+			$scope.message = '';
+		}
 		
 	}
 
