@@ -3,14 +3,55 @@
 	height: 80px;
 }
 
+.page-container {
+	height: 100%;
+}
+
+.chat-row {
+	height: 80%;
+}
+
+.chat-box-container {
+	min-height: 400px;
+}
+
+.chat-room h2 {
+	color: white;
+}
+
+.user-name-form {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.room-list-container {
+	margin-top: 20px;
+}
+
+.chat-room {
+	margin-right: 30px;
+	margin-left: 15px;
+}
+
+.room-list-container li h4 {
+	text-align: center;
+	color: green;
+	font-size: 30px;
+}
+
+.room-container:hover {
+	cursor: pointer;
+}
+
 .room-list {
-	background-color: grey;
-	position: absolute;
-	top: 120px;
 	left: 0px;
-	height: 60%;
-	width: 200px;
-	color: white
+	height: 75%;
+}
+
+.chat-room {
+	background-color: green;
+	min-height: 300px;
 }
 
 #sidebar-nav-fixed {

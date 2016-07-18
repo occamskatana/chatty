@@ -1,10 +1,41 @@
-<h1 align="center">Home Page</h1>
 
 
+<div class="user-name-form" ng-show="verified == false">
+	<form ng-submit="setUserName()">
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Pick a User Name </label>
+	    <input type="text" ng-model="userName.name" class="form-control">
+	  </div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+<div class="container-fluid page-container" ng-show="verified == true">
 
+	<div class="row chat-row">
+		<h1 align="center">Welcome, {{user}}</h1>
+		<div class="col-md-3 well room-list">
+			<h1 align="center">Rooms</h1>
+			<form class="form-inline" ng-submit="addRoom()">
+				<div class="form-group">
+					<input type="text" class="form-control" ng-model="newRoom.name" placeholder="New Room Name Here!">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		<div class="card room-list-container">
+			<ul class="list-group list-group-flush">
+		    <li ng-repeat="room in rooms" class="list-group-item room-container" ng-click="changeRoom(room.$id, room)">
+		    	<h4>{{room.name}}</h4>
+		    </li>
+		  </ul>
+		 </div>
+			
+		</div>
 
-<div id="sidebar" class="well" ng-repeat="room in rooms">
-	
-		{{room.title}}
-	
+		<div class="col-md-8 chat-room">
+			<h2 align="center">{{roomName}}</h2>
+			<div class="chat-box-container well" ng-show="roomName !== 'Pick a Room'">
+				
+			</div>
+		</div>
+	</div>
 </div>
