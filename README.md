@@ -1,6 +1,6 @@
-## Bloc Frontend Project Starter
+## Chatty Sample Web App
 
-A starter application for student projects in Bloc's [Frontend Web Development Course](https://www.bloc.io/frontend-development-bootcamp).
+A sample chat application using AngularJS and Firebase. 
 
 ## Configuration
 
